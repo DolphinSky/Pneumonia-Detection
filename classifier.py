@@ -124,13 +124,13 @@ for i in range(EPOCHS):
         print(
             "EPOCH "
             + str(i)
-            + " MINIBATCH:- "
+            + " MINIBATCH: "
             + str(batch_idx)
             + "/"
             + str(STEPS_PER_EPOCH)
-            + " LOSS: - "
+            + " LOSS: "
             + str(loss_history[-1])
-            + " ACC:- "
+            + " ACC: "
             + str(correct / (incorrect + correct)),
             end="\r",
         )
@@ -141,11 +141,11 @@ for i in range(EPOCHS):
         + str(i)
         + " LOSS "
         + str(sum(loss_history[-STEPS_PER_EPOCH:]) / STEPS_PER_EPOCH)
-        + " ETA:- "
+        + " ETA: "
         + str(start - end)
-        + " \n MAX LOSS:- "
+        + " \n MAX LOSS: "
         + str(max(loss_history[-STEPS_PER_EPOCH:]))
-        + " MIN LOSS:- "
+        + " MIN LOSS: "
         + str(min(loss_history[-STEPS_PER_EPOCH:]))
     )
 
@@ -194,7 +194,7 @@ def get_test():
         test_loss.append(float(loss.detach()))
     print("CORRECT:- " + str(correct), "INCORRECT:- " + str(incorrect))
     return (
-        "TEST_ACC :- "
+        "TEST_ACC : "
         + str(correct / (correct + incorrect))
         + " TEST_LOSS:- "
         + str(float(sum(test_loss) / len(test_loss)))
