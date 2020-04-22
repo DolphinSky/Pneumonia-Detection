@@ -132,7 +132,7 @@ for i in range(EPOCHS):
             + str(loss_history[-1])
             + " ACC: "
             + str(correct / (incorrect + correct)),
-            end="\r",
+            end="\r"
         )
 
     end = time.time()
