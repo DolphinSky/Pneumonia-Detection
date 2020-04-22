@@ -1,4 +1,4 @@
-# Downloading dataset:-
+# Downloading dataset:
 
 import os
 os.environ['KAGGLE_USERNAME'] = "KAGGLE_USERNAME" # username from the json file
