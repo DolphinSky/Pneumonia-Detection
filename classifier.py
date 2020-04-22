@@ -192,11 +192,11 @@ def get_test():
                     incorrect = incorrect + 1
 
         test_loss.append(float(loss.detach()))
-    print("CORRECT:- " + str(correct), "INCORRECT:- " + str(incorrect))
+    print("CORRECT: " + str(correct), "INCORRECT: " + str(incorrect))
     return (
         "TEST_ACC : "
         + str(correct / (correct + incorrect))
-        + " TEST_LOSS:- "
+        + " TEST_LOSS: "
         + str(float(sum(test_loss) / len(test_loss)))
     )
 
