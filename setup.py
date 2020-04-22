@@ -1,4 +1,4 @@
-Downloading dataset:-
+# Downloading dataset:-
 
 import os
 os.environ['KAGGLE_USERNAME'] = "KAGGLE_USERNAME" # username from the json file
@@ -10,5 +10,5 @@ with ZipFile('chest-xray-pneumonia.zip', 'r') as zipObj:
    # Extract all the contents of zip file in current directory
    zipObj.extractall()
    
-KAGGLE LINK:- https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?rvi=1
+# KAGGLE LINK:- https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?rvi=1
    
